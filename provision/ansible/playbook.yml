@@ -1,0 +1,8 @@
+---
+- name: ensure all common configurations are setup
+  hosts: all
+  remote_user: root
+  vars_files:
+    - "group_vars/{{env}}.yml"
+  roles:
+    - common

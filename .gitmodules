@@ -1,0 +1,4 @@
+[submodule "ansible-common-role"]
+	path = provision/ansible/roles/common
+	url = git@github.com:rawroland/ansible_common_role.git
+	branch = master
