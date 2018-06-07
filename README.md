@@ -6,5 +6,5 @@ Provisioner for setting up a bionic server and deploying the complete Befuh stac
 $ git clone --recursive git@github.com:rawroland/befuh-provisioner.git <folder>
 $ cd <folder>
 $ sudo /bin/bash provision/preinstaller/ubuntu-18.04.sh --env=prod
-$ sudo ansible-playbook sudo ansible-playbook provision/ansible/playbook.yml
+$ sudo ansible-playbook provision/ansible/playbook.yml
 ```
