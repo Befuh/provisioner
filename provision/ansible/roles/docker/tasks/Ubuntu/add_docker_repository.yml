@@ -5,6 +5,6 @@
 
 - name: Add repository
   apt_repository:
-    repo: deb https://download.docker.com/linux/ubuntu bionic stable
+    repo: deb https://download.docker.com/linux/ubuntu bionic test
     state: present
     update_cache: yes
