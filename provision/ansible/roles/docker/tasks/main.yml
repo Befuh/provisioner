@@ -1,0 +1,6 @@
+---
+
+- include_vars: "{{ env }}.yml"
+- include_vars: "{{ ansible_distribution }}/main.yml"
+- include_tasks: "{{ ansible_distribution }}/add_docker_repository.yml"
+- include_tasks: install_docker.yml
