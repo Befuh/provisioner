@@ -1,0 +1,11 @@
+---
+
+- name: Download docker compose
+  get_url:
+    url: "https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m)"
+    dest: "{{ docker_compose_file }}"
+
+- name: Make the file executable
+  file:
+    dest: "{{ docker_compose_file }}"
+    mode: "a+x"
